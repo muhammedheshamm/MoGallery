@@ -68,7 +68,7 @@ const registerAdmin = async () => {
       console.log('Admin already exists')
       return
     }
-    const username = 'muhammed', password = '123'
+    const username = 'admin', password = 'admin'
     const salt = await bcrypt.genSalt(10);
     const hashed = await bcrypt.hash(password, salt);
 
