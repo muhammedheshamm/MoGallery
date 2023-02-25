@@ -38,12 +38,12 @@ Start the server and react app
  Admin
 
 - To log in as an admin, Click login and enter 'admin' as username and 'admin' as password (case-senstive). 
-- After logging in, the admin can add new post or delete existing post.
+- After logging in, the admin can add new post or delete an existing post.
 
 User
 
-- to log in as a user, you must register first with username and password then log in.
-- after logging in, the user van like and save posts and view saved posts by clicking the SAVED button.
+- to log in as a user, you must register first with username and password (if you don't have an account) then log in.
+- after logging in, the user can like and save posts and view saved posts by clicking the SAVED button.
 
 
 
