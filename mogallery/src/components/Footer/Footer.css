@@ -1,0 +1,17 @@
+.footer{
+  background-color: var(--main-color-dark);
+  color: var(--main-color-light);
+  padding: 20px;
+  height: 70px;
+  font-weight: 300;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.footer a{
+  color: var(--main-color-light);
+  text-decoration: none;
+}

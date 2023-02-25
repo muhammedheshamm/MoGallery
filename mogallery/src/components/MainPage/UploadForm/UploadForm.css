@@ -1,0 +1,215 @@
+.form-b{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.up-form{
+  background-color: var(--main-color-light);
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  position: relative;
+  cursor: default;
+  transition: .3s;
+}
+.up-form h1{
+  margin: 0 0 5px;
+  font-size: 27px;
+  text-align: left;
+  color: var(--main-color-dark);
+}
+.up-form .subtitle{
+  font-size: 13px;
+  text-align: left;
+  color: var(--main-color-dark);
+  margin:0 0 25px;
+  font-weight: 300;
+}
+
+.up-form form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 20px;
+  width: 100%;
+}
+
+.up-form form .wraber{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.up-form form .wraber label{
+  font-size: 13px;
+  color: var(--main-color-dark);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: var(--main-color-light);
+  padding: 0 5px;
+}
+
+.required::after{
+  content: "*";
+  color: red;
+  font-size: 15px;
+  margin-left: 3px;
+}
+
+.up-form form input{
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid #777;
+  padding: 12px;
+  font-size: 16px;
+  background-color: transparent;
+  color: var(--main-color-dark);
+}
+
+.up-form form .select{
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid #777;
+  padding: 10px;
+  font-size: 16px;
+  background-color: transparent;
+  color: var(--main-color-dark);
+  outline: none;
+}
+
+.up-form form .select:active{
+  outline: none;
+}
+
+.up-form form input:focus, textarea:focus{
+  outline: none;
+}
+
+.up-form form textarea{
+  height: 100px;
+  width: 100%;
+  resize: none;
+  padding: 10px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 2px solid #777;
+  border-radius: 10px;
+  color: var(--main-color-dark);
+  font-family: 'open sans', sans-serif;
+}
+
+#file-input{
+  display: none;
+}
+
+.file-label{
+  width: 100%;
+  height: 70px;
+  cursor: pointer;
+  border: 2px dashed var(--main-color-dark);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: var(--main-color-dark);
+  transition: .3s ease-in-out;
+}
+
+.file-label:hover .camera-icon{
+  animation: icon-animation 0.3s ease-in-out alternate infinite both running; 
+}
+
+@keyframes icon-animation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.file-label .camera-icon{
+  font-size: 40px;
+}
+
+.file-label p{
+  font-size: 16px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+.up-form form button{
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--main-color-dark);
+  color: var(--main-color);
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.cross-icon{
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--main-color-dark);
+}
+
+.load {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0 auto;
+  height: 25px;
+}
+.load div {
+  width: 20px;
+  height: 20px;
+  background-color: var(--secondry-color);
+  border-radius: 50%;
+  margin: 0 5px;
+  animation-name: up-and-down;
+  animation-duration: 0.7s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.load .two {
+  animation-delay: 0.3s;
+}
+.load .three {
+  animation-delay: 0.6s;
+}
+
+@keyframes up-and-down {
+  to {
+    opacity: 0.2;
+    transform: translateY(-5px);
+  }
+}

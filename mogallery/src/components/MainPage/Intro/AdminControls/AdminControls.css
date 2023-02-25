@@ -1,0 +1,24 @@
+.controls{
+  position: absolute;
+  bottom: 50px;
+}
+.controls .add{
+  font-size: 30px;
+  color: var(--main-color-dark);
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--main-color-dark);
+  transition: .3s;
+}
+
+.controls .add:hover{
+  background-color: var(--main-color-dark);
+  color: var(--main-color-light);
+}

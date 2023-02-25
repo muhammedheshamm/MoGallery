@@ -1,0 +1,132 @@
+.header{
+    position: fixed;
+    z-index:1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .5s;
+}
+
+.scrolled-header{
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.header-container{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.flex-cont{
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  margin: 0;
+  text-decoration: none;
+  color: var(--main-color-dark);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.logo span{
+  color: var(--secondry-color);
+}
+
+.refs{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    text-transform: uppercase;
+}
+
+.refs li a{
+  text-decoration: none;
+  color: var(--main-color-dark);
+  transition: .3s;
+}
+
+.refs li a .ref-icons{
+  display: none;
+  font-size: 22px;
+}
+
+.refs li a:hover{
+  color: var(--secondry-color);
+}
+
+.login{
+  background-color: var(--main-color-dark);
+  padding: 8px 14px;
+  color: var(--main-color-light) !important;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.bars-icon, .logout-icon{
+  margin-left: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.logout-b{
+  background-color: var(--main-color-dark);
+  margin-left: 20px;
+  cursor: pointer;
+  color: var(--main-color-light);
+  padding: 7px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 40px;
+}
+
+@media (max-width:650px){
+  .refs{
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.9);
+    gap: 0;
+  }
+  .refs li{
+    width: 100%;
+  }
+  .refs li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 25px;
+    width: 100%!important;
+    color: var(--main-color-light);
+  }
+  .refs li a .ref-icons{
+    display: block;
+  }
+  .refs li:not(:last-child){
+    border-bottom: 1px solid rgba(221, 221, 221, 0.5);
+  }
+  .login{
+    margin-left: 0;
+  }
+  .bars-icon{
+    display: block;
+  }
+}

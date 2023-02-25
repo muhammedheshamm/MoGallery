@@ -1,0 +1,12 @@
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 70px);
+    width: 100%;
+    color: var(--main-color-dark);
+    background-color: var(--main-color);
+    font-family: 'Source Code Pro', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}

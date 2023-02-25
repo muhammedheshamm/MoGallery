@@ -1,0 +1,23 @@
+:root{
+  --main-color: #ebe8e2;
+  --main-color-dark: #131313;
+  --main-color-light: #fff;
+  --secondry-color: #036451;
+}
+
+
+.App {
+  /* background:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)), url(./assets/wallpaper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+  overflow: hidden;
+}
+
+.container{
+  width: 100%;
+  max-width: 1350px;
+  margin: auto;
+  padding: 0 20px;
+}

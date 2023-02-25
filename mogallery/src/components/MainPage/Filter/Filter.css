@@ -1,0 +1,49 @@
+.filter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0!important;
+    color: var(--main-color-dark);
+}
+
+.filter-item{
+  cursor: pointer;
+  transition: .1s;
+  width: 100%;
+  max-width: 100px;
+  height: 50px;
+  padding: 15px 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.filter hr{
+  margin: 0;
+  width: 0;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+}
+
+@media (max-width: 440px) {
+  .filter-item{
+    font-size: 14px;
+    height: 45px;
+    padding: 12px 0;
+  }
+}
+
+.filter-item:hover{
+  color: var(--secondry-color);
+  border-bottom: 4px solid var(--secondry-color);
+}
+
+.filter-active{
+  color: var(--main-color-light);
+  background-color: var(--secondry-color);
+}
+.filter-active:hover{
+  color: var(--main-color-light);
+  border: none;
+}
+

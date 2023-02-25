@@ -1,0 +1,74 @@
+.likers-wraper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.likers-wraper .likers{
+  width: 100%;
+  max-width:400px;
+  min-height: 300px;
+  margin: 0 20px;
+  background-color: #ffffffc0;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+}
+
+.likers-wraper .likers .cross-holder{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  border: none;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+}
+
+
+.likers-wraper .likers .likes-cross-icon{
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.likers .title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: block;
+  text-align: left;
+}
+
+.likers .users{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.likers .users span{
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.likers .users span .users-icon{
+  font-size: 35px;
+}
+
+.likers .users span:not(:last-child){
+  border-bottom: 1px solid #3333336c;
+}
+
